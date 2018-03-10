@@ -1,0 +1,9 @@
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'N/A', 'N/A');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'N/A', 'think_africa');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'N/A', 'african_elephant');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'Cotton', 'N/A');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'Cotton', 'think_africa');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'Cotton', 'african_elephant');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'Poly_cotton', 'N/A');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'Poly_cotton', 'think_africa');
+INSERT INTO `style` (`style_id`, `cloth_type`, `logo_style`) VALUES (NULL, 'Poly_cotton', 'african_elephant');
