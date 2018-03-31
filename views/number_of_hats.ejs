@@ -1,0 +1,14 @@
+<html><body>
+<% if(numhats.length){ 
+    for(var i = 0;i < numhats.length;i++) { %>
+  <tr>
+    <td><%=numhats[i].number%></td>
+    
+  </tr>
+  <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No hats</td>
+  </tr>
+<% } %>  
+</body></html>

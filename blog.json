@@ -1,0 +1,12 @@
+Article {
+  "_id" : "A",
+  "title" : "Hello World",
+  "user_id" : 12345,
+  "text" : 'My test article',
+
+  "comments" : [
+    { 'text' : 'blah', 'user_id' : 654321, 'votes' : [987654]},
+    { 'text' : 'foo', 'user_id' : 987654, 'votes' : [12345, 654321] },
+    ...
+  ]
+}

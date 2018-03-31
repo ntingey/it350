@@ -1,0 +1,52 @@
+<html><body>
+<table border="1" cellpadding="7" cellspacing="7">
+  <tr>
+    <th width="50px">No</th>
+    <th>Product Type</th>
+    <th>Product ID</th>
+    <th>Color</th>
+    <th>Price</th>
+  </tr>
+  <% if(data.length){ 
+    for(var i = 0;i < data.length;i++) { %>
+  <tr>
+    <td><%=(i+1)%></td>
+    <td><%=data[i].product_type%></td>
+    <td><%=data[i].product_id%></td>
+    <td><%=data[i].color%></td>
+    <td><%=data[i].price%></td>
+  </tr>
+  <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No user</td>
+  </tr>
+<% } %>
+</table>
+<h2>please choose a product to buy, by its product id number, and type in your email address</h2>
+  <form class="form-horizontal" role="form" method="post" action="/home/order">
+            <select name="product_id" class="form-control" id="sel1">
+            <% if(dropdownVals){
+            for(var i=0; i < dropdownVals.length; i++) { %>
+            <option><%= dropdownVals[i].product_id %></option>
+            <% }
+            }else { %>
+            <tr>
+            <td colspan="3">No values</td>
+            </tr>
+            <% } %>
+            </select>
+             <input required type="email" class="form-control" name="user_email" placeholder="Email">
+          <input type="submit" value="Submit">
+        </form>
+        
+<form method="get" action="/number_of_hats">
+    <input type="submit" value="See number of hats">
+    </form>
+
+    <form method="get" action="/blog">
+    <input type="submit" value="Blog">
+    </form>
+
+
+</body></html>

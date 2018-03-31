@@ -1,0 +1,46 @@
+<html><body>
+
+  <tr>
+   <h1>Blog Article Title</h1>
+    <% if(docs.length){ 
+    for(var i = 0;i < docs.length;i++) { %>
+    <td><%=docs[i].title%></td>
+    <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No user</td>
+  </tr>
+  <% } %>
+
+
+  <tr>
+    <h1>Article</h1>
+    <% if(docs.length){ 
+    for(var i = 0;i < docs.length;i++) { %>
+    <td><%=docs[i].text%></td>
+    <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No user</td>
+  </tr>
+  <% } %>
+
+
+  <tr>
+    <h1>Comments</h1>
+    <% if(docs.length){ 
+    for(var i = 0;i < docs.length;i++) { %>
+    <td><%=docs[i].comments%></td>
+    
+  </tr>
+  <% }
+  }else{ %>
+  <tr>
+    <td colspan="3">No user</td>
+  </tr>
+  <% } %>
+  <form method="post" action="/blog_comment">
+    <input type="text" name="comment">
+    <input type="submit" value="comment">
+    </form>
+</body></html>

@@ -1,0 +1,1 @@
+{"_id":{"$oid":"5abd15d3e7c97427f3a962f8"},"title":"Hello World","text":"This is a test","comments":["Not a fan of mongo","Yeah mysql is the way to go"]}
